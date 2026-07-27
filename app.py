@@ -4,7 +4,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Hello World from Flask"
+    print("User Authentication Feature Added")
+    return "Hello World from Flask - User Authentication Feature"
 
 if __name__ == "__main__":
     app.run(debug=True)

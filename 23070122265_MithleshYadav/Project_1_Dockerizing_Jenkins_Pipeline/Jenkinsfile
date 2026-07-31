@@ -4,13 +4,15 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                echo 'Source code available in Jenkins workspace'
+                echo 'Source code checked out successfully'
             }
         }
 
         stage('Build Docker Image') {
             steps {
-                bat 'docker build -t project1-flask-jenkins .'
+                dir('23070122265_MithleshYadav/Project_1_Dockerizing_Jenkins_Pipeline') {
+                    bat 'docker build -t project1-flask-jenkins .'
+                }
             }
         }
 

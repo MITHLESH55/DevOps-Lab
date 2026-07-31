@@ -1,0 +1,35 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                echo 'Source code available in Jenkins workspace'
+            }
+        }
+
+        stage('Build Docker Image') {
+            steps {
+                bat 'docker build -t project1-flask-jenkins .'
+            }
+        }
+
+        stage('Stop Old Container') {
+            steps {
+                bat 'docker rm -f project1-jenkins-container 2>nul || echo No old container found'
+            }
+        }
+
+        stage('Run Docker Container') {
+            steps {
+                bat 'docker run -d -p 5002:5000 --name project1-jenkins-container project1-flask-jenkins'
+            }
+        }
+
+        stage('Verify Container') {
+            steps {
+                bat 'docker ps'
+            }
+        }
+    }
+}

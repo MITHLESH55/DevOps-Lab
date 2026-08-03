@@ -1,0 +1,32 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:15
+    container_name: postgres_db
+    restart: always
+
+    environment:
+      POSTGRES_DB: flaskdb
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin123
+
+    ports:
+      - "5432:5432"
+
+  flaskapp:
+    build: .
+    container_name: flask_app
+    restart: always
+
+    depends_on:
+      - db
+
+    environment:
+      DB_HOST: db
+      DB_NAME: flaskdb
+      DB_USER: admin
+      DB_PASSWORD: admin123
+
+    ports:
+      - "5000:5000"

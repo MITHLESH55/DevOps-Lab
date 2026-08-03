@@ -1,0 +1,36 @@
+pipeline {
+    agent any
+
+    stages {
+
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Build Docker Image') {
+            steps {
+                dir('23070122265_MithleshYadav/Assignment-TW1.1-Git') {
+                    sh 'docker build -t flaskapp:v1 .'
+                }
+            }
+        }
+
+        stage('Verify Docker Image') {
+            steps {
+                sh 'docker images'
+            }
+        }
+    }
+
+    post {
+        success {
+            echo 'Pipeline completed successfully!'
+        }
+
+        failure {
+            echo 'Pipeline failed.'
+        }
+    }
+}

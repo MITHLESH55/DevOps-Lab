@@ -1,0 +1,7 @@
+angular-docker-app/node_modules
+angular-docker-app/.angular
+angular-docker-app/dist
+.git
+.vscode
+README.md
+screenshots

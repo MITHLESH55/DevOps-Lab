@@ -1,39 +1,34 @@
 pipeline {
-    agent { label 'agent1' }
+    agent none
 
     stages {
-
-        stage('Checkout') {
+        stage('Compile on Agent 1') {
+            agent { label 'agent1' }
             steps {
                 checkout scm
+                dir('Project_4_Distributed_Jenkins_Maven/portfolio') {
+                    bat 'mvn clean compile'
+                }
             }
         }
 
-        stage('Compile') {
+        stage('Test on Agent 2') {
+            agent { label 'agent2' }
             steps {
-                bat 'mvn clean compile'
-            }
-        }
-
-        stage('Test') {
-            steps {
-                bat 'mvn test'
-            }
-        }
-
-        stage('Package') {
-            steps {
-                bat 'mvn package'
+                checkout scm
+                dir('Project_4_Distributed_Jenkins_Maven/portfolio') {
+                    bat 'mvn test'
+                }
             }
         }
     }
 
     post {
         success {
-            echo 'Build Successful!'
+            echo 'Distributed Maven pipeline completed successfully.'
         }
         failure {
-            echo 'Build Failed!'
+            echo 'Distributed Maven pipeline failed.'
         }
     }
 }

@@ -2,11 +2,13 @@ pipeline {
     agent none
 
     stages {
+
         stage('Compile on Agent 1') {
             agent { label 'agent1' }
             steps {
                 checkout scm
-                dir('Project_4_Distributed_Jenkins_Maven/portfolio') {
+
+                dir('23070122265_MithleshYadav/Project_4_Distributed_Jenkins_Maven/portfolio') {
                     bat 'mvn clean compile'
                 }
             }
@@ -16,8 +18,18 @@ pipeline {
             agent { label 'agent2' }
             steps {
                 checkout scm
-                dir('Project_4_Distributed_Jenkins_Maven/portfolio') {
+
+                dir('23070122265_MithleshYadav/Project_4_Distributed_Jenkins_Maven/portfolio') {
                     bat 'mvn test'
+                }
+            }
+        }
+
+        stage('Package on Agent 2') {
+            agent { label 'agent2' }
+            steps {
+                dir('23070122265_MithleshYadav/Project_4_Distributed_Jenkins_Maven/portfolio') {
+                    bat 'mvn package'
                 }
             }
         }
@@ -27,6 +39,7 @@ pipeline {
         success {
             echo 'Distributed Maven pipeline completed successfully.'
         }
+
         failure {
             echo 'Distributed Maven pipeline failed.'
         }

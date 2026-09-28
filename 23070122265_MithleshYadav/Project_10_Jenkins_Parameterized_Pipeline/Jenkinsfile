@@ -1,0 +1,33 @@
+pipeline {
+    agent any
+
+    parameters {
+        string(
+            name: 'GREETING_NAME',
+            defaultValue: 'World',
+            description: 'Enter the name to use in the greeting'
+        )
+    }
+
+    stages {
+        stage('Greeting') {
+            steps {
+                echo "Hello ${params.GREETING_NAME}"
+            }
+        }
+
+        stage('Build Information') {
+            steps {
+                echo "Project: Project 10 - Jenkins Parameterized Pipeline"
+                echo "Build Number: ${BUILD_NUMBER}"
+                echo "Selected Name: ${params.GREETING_NAME}"
+            }
+        }
+    }
+
+    post {
+        success {
+            echo 'Parameterized pipeline completed successfully.'
+        }
+    }
+}

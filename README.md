@@ -1,43 +1,46 @@
-# ⚙️ DevOps Lab — Engineering Portfolio
+# DevOps Lab — Engineering Portfolio
 
 <p align="center">
-  <img src="https://img.shields.io/badge/DevOps-Engineering-0A66C2?style=for-the-badge" alt="DevOps">
-  <img src="https://img.shields.io/badge/Git-Version%20Control-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
-  <img src="https://img.shields.io/badge/Jenkins-CI%2FCD-D24939?style=for-the-badge&logo=jenkins&logoColor=white" alt="Jenkins">
-  <img src="https://img.shields.io/badge/Docker-Containerization-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
-  <img src="https://img.shields.io/badge/Kubernetes-Orchestration-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes">
+  <strong>Hands-on DevOps Engineering | CI/CD | Docker | Kubernetes | Automation</strong>
 </p>
 
 <p align="center">
-  <strong>Hands-on DevOps Engineering • CI/CD • Containerization • Kubernetes • Automation</strong>
+  <a href="https://github.com/MITHLESH55/DevOps-Lab">
+    <img src="https://img.shields.io/badge/GitHub-DevOps--Lab-181717?style=flat-square&logo=github" alt="GitHub">
+  </a>
+  <img src="https://img.shields.io/badge/Git-Version%20Control-F05032?style=flat-square&logo=git&logoColor=white" alt="Git">
+  <img src="https://img.shields.io/badge/Jenkins-CI%2FCD-D24939?style=flat-square&logo=jenkins&logoColor=white" alt="Jenkins">
+  <img src="https://img.shields.io/badge/Docker-Containerization-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker">
+  <img src="https://img.shields.io/badge/Kubernetes-Orchestration-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes">
+  <img src="https://img.shields.io/badge/Maven-Build%20Automation-C71A36?style=flat-square&logo=apachemaven&logoColor=white" alt="Maven">
 </p>
 
 ---
 
-## 👋 Overview
+## Overview
 
-This repository is a collection of **hands-on DevOps engineering implementations** developed as part of my B.Tech Computer Science & Engineering coursework.
+This repository contains my **hands-on DevOps laboratory implementations and engineering projects**, developed during my B.Tech Computer Science & Engineering program at **Symbiosis Institute of Technology, Pune**.
 
-The work covers the practical journey from **source-code management and collaborative development to automated builds, CI/CD pipelines, containerization, container registries, Kubernetes deployment, autoscaling, microservices, database services, and persistent storage**.
+The projects cover the practical DevOps lifecycle from **version control and collaborative development to CI/CD automation, containerization, image management, Kubernetes orchestration, autoscaling, microservices, database deployment, and persistent storage**.
 
-The focus is on implementing real development and deployment workflows using industry-relevant tools rather than only studying their theoretical concepts.
+Rather than focusing only on individual tools, the repository demonstrates how these technologies work together to build, automate, deploy, and manage software systems.
 
 ---
 
-## 👨‍💻 Author
+## Author
 
-**Mithlesh Yadav**
-
+**Mithlesh Yadav**  
 B.Tech — Computer Science & Engineering  
 Symbiosis Institute of Technology, Pune
 
-[![GitHub](https://img.shields.io/badge/GitHub-MITHLESH55-181717?style=flat-square&logo=github)](https://github.com/MITHLESH55)
+- GitHub: [@MITHLESH55](https://github.com/MITHLESH55)
+- Repository: [DevOps-Lab](https://github.com/MITHLESH55/DevOps-Lab)
 
 ---
 
-## 🧰 Technology Stack
+## Technology Stack
 
-| Category | Technologies |
+| Area | Technologies |
 |---|---|
 | Version Control | Git, GitHub |
 | CI/CD | Jenkins |
@@ -56,7 +59,7 @@ Symbiosis Institute of Technology, Pune
 
 ---
 
-## 📁 Repository Structure
+# Repository Structure
 
 ```text
 23070122265_MithleshYadav/

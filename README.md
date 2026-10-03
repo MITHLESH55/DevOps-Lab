@@ -1,35 +1,36 @@
-# DevOps Lab — Engineering Portfolio
+# ⚙️ DevOps Lab — Engineering Portfolio
 
 <p align="center">
-  <strong>Hands-on DevOps Engineering | CI/CD | Docker | Kubernetes | Automation</strong>
+  <strong>Hands-on DevOps Engineering • CI/CD • Containerization • Kubernetes • Automation</strong>
 </p>
 
 <p align="center">
-  <a href="https://github.com/MITHLESH55/DevOps-Lab">
-    <img src="https://img.shields.io/badge/GitHub-DevOps--Lab-181717?style=flat-square&logo=github" alt="GitHub">
-  </a>
-  <img src="https://img.shields.io/badge/Git-Version%20Control-F05032?style=flat-square&logo=git&logoColor=white" alt="Git">
-  <img src="https://img.shields.io/badge/Jenkins-CI%2FCD-D24939?style=flat-square&logo=jenkins&logoColor=white" alt="Jenkins">
-  <img src="https://img.shields.io/badge/Docker-Containerization-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker">
-  <img src="https://img.shields.io/badge/Kubernetes-Orchestration-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes">
-  <img src="https://img.shields.io/badge/Maven-Build%20Automation-C71A36?style=flat-square&logo=apachemaven&logoColor=white" alt="Maven">
+  <img src="https://img.shields.io/badge/DevOps-Engineering-0A66C2?style=for-the-badge" alt="DevOps">
+  <img src="https://img.shields.io/badge/Git-Version%20Control-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+  <img src="https://img.shields.io/badge/Jenkins-CI%2FCD-D24939?style=for-the-badge&logo=jenkins&logoColor=white" alt="Jenkins">
+  <img src="https://img.shields.io/badge/Docker-Containerization-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+  <img src="https://img.shields.io/badge/Kubernetes-Orchestration-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes">
+  <img src="https://img.shields.io/badge/Maven-Build%20Automation-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white" alt="Maven">
 </p>
 
 ---
 
-## Overview
+## 📌 Overview
 
-This repository contains my **hands-on DevOps laboratory implementations and engineering projects**, developed during my B.Tech Computer Science & Engineering program at **Symbiosis Institute of Technology, Pune**.
+This repository contains my **hands-on DevOps laboratory implementations and engineering projects** developed during my B.Tech Computer Science & Engineering program at **Symbiosis Institute of Technology, Pune**.
 
-The projects cover the practical DevOps lifecycle from **version control and collaborative development to CI/CD automation, containerization, image management, Kubernetes orchestration, autoscaling, microservices, database deployment, and persistent storage**.
+The repository demonstrates the practical DevOps lifecycle from:
 
-Rather than focusing only on individual tools, the repository demonstrates how these technologies work together to build, automate, deploy, and manage software systems.
+**Source Control → CI/CD → Build Automation → Containerization → Registry → Kubernetes → Scaling → Microservices → Persistent Storage**
+
+The implementations focus on understanding how different DevOps technologies integrate to build, automate, deploy, scale, and manage modern software applications.
 
 ---
 
-## Author
+## 👨‍💻 Author
 
-**Mithlesh Yadav**  
+**Mithlesh Yadav**
+
 B.Tech — Computer Science & Engineering  
 Symbiosis Institute of Technology, Pune
 
@@ -38,7 +39,23 @@ Symbiosis Institute of Technology, Pune
 
 ---
 
-## Technology Stack
+## 📑 Contents
+
+- [Overview](#-overview)
+- [Author](#-author)
+- [Technology Stack](#-technology-stack)
+- [Repository Structure](#-repository-structure)
+- [Project Portfolio](#-project-portfolio)
+- [Supporting Assignments](#-supporting-assignments)
+- [DevOps Architecture](#-devops-architecture)
+- [Engineering Capabilities](#-engineering-capabilities)
+- [Engineering Principles](#-engineering-principles)
+- [Learning Outcomes](#-learning-outcomes)
+- [Repository Status](#-repository-status)
+
+---
+
+# 🧰 Technology Stack
 
 | Area | Technologies |
 |---|---|
@@ -59,7 +76,7 @@ Symbiosis Institute of Technology, Pune
 
 ---
 
-# Repository Structure
+# 📂 Repository Structure
 
 ```text
 23070122265_MithleshYadav/
